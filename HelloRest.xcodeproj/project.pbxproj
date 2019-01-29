@@ -12,6 +12,8 @@
 		01AF85A922004AF500947D6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01AF85A722004AF500947D6F /* Main.storyboard */; };
 		01AF85AB22004AF700947D6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01AF85AA22004AF700947D6F /* Assets.xcassets */; };
 		01AF85AE22004AF700947D6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01AF85AC22004AF700947D6F /* LaunchScreen.storyboard */; };
+		01AF85B722004DFC00947D6F /* userPosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AF85B622004DFC00947D6F /* userPosts.swift */; };
+		01AF85B922004EF200947D6F /* PostParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AF85B822004EF200947D6F /* PostParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		01AF85AA22004AF700947D6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01AF85AD22004AF700947D6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01AF85AF22004AF700947D6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01AF85B622004DFC00947D6F /* userPosts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userPosts.swift; sourceTree = "<group>"; };
+		01AF85B822004EF200947D6F /* PostParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,24 @@
 		01AF85A222004AF500947D6F /* HelloRest */ = {
 			isa = PBXGroup;
 			children = (
+				01AF85B522004DD500947D6F /* model */,
+				01AF85A722004AF500947D6F /* Main.storyboard */,
 				01AF85A322004AF500947D6F /* AppDelegate.swift */,
 				01AF85A522004AF500947D6F /* ViewController.swift */,
-				01AF85A722004AF500947D6F /* Main.storyboard */,
 				01AF85AA22004AF700947D6F /* Assets.xcassets */,
 				01AF85AC22004AF700947D6F /* LaunchScreen.storyboard */,
 				01AF85AF22004AF700947D6F /* Info.plist */,
 			);
 			path = HelloRest;
+			sourceTree = "<group>";
+		};
+		01AF85B522004DD500947D6F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				01AF85B622004DFC00947D6F /* userPosts.swift */,
+				01AF85B822004EF200947D6F /* PostParser.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +150,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				01AF85A622004AF500947D6F /* ViewController.swift in Sources */,
+				01AF85B722004DFC00947D6F /* userPosts.swift in Sources */,
+				01AF85B922004EF200947D6F /* PostParser.swift in Sources */,
 				01AF85A422004AF500947D6F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +307,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = be.ehb.HelloRest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,7 +324,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = be.ehb.HelloRest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
